@@ -9,7 +9,8 @@ tags: wp
        
 二次注入      
 
-![06.png](https://img11.360buyimg.com/ddimg/jfs/t1/174863/29/3351/8503/6072da0aEe2e9591e/202fcd59c2670f49.png)
+![](https://img11.360buyimg.com/ddimg/jfs/t1/174863/29/3351/8503/6072da0aEe2e9591e/202fcd59c2670f49.png)
+
 提示了账号和密码，一般后面是三位数字，爆破是666       
 ![](https://ftp.bmp.ovh/imgs/2021/04/04a05effe6890640.png)      
 `write_do.php`    
