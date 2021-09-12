@@ -21,7 +21,7 @@
 
   `Pickler(file, protocol).dump(obj)` 实现的功能跟 `pickle.dump() `是一样的。
 
-  ![image-20210910130717888](D:\Users\L--N\Desktop\MD\security\picture\image-20210910130717888.png)
+  ![](https://s3.bmp.ovh/imgs/2021/09/49d6eb1f65474575.png)
 
 * `pickle.dumps`(*obj*, *protocol=None*, ***, *fix_imports=True*, *buffer_callback=None*)
 
@@ -47,7 +47,7 @@ b'\x80\x04K{.'
 
 可以序列化的对象
 
-![77654499](D:\Users\L--N\Desktop\MD\security\picture\77654499.png)
+![](https://s3.bmp.ovh/imgs/2021/09/cb58203c3f3f83d7.png)
 
 ### pickle反序列化漏洞
 
@@ -57,7 +57,7 @@ b'\x80\x04K{.'
 
 > `object.__reduce__`()
 >
-> ![image-20210910141404968](D:\Users\L--N\Desktop\MD\security\picture\image-20210910141404968.png)
+> ![](https://s3.bmp.ovh/imgs/2021/09/a773ddf2bd36a140.png)
 
 该函数需要返回一个元组，第一个参数为可调用对象，第二个是可调用对象的参数
 
